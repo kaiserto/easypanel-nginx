@@ -1,3 +1,4 @@
 FROM wyveo/nginx-php-fpm:php81
 
-COPY  ./conf/nginx.conf /etc/nginx/nginx.conf
+COPY  ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY  ./nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
